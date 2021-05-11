@@ -4,14 +4,13 @@ import { Grid } from '@material-ui/core';
 import Product from './Product/Product';
 
 const products =[
-    {id:1, name:'shoes', description: 'Running shoes.', price:'$5'},
-    {id:2, name:'t-shirt', description: 'male t-shirt.', price:'$10' },
+    {id:1, name:'shoes', description: 'Running shoes.', price:'$5', image: 'https://www.pasnormalstudios.com/shared/16/750/pas-normal-studios-logo-t-shirt-black_1180w.jpg'},
+    {id:2, name:'t-shirt', description: 'male t-shirt.', price:'$10',image: 'https://www.pasnormalstudios.com/shared/16/750/pas-normal-studios-logo-t-shirt-black_1180w.jpg' },
 
 ]
 
 const Products = () =>{
     return(
-
         <main>
         <Grid container justify="center" spacing={4}>
             {products.map((product) =>(
@@ -22,7 +21,6 @@ const Products = () =>{
 
         </Grid>
     </main>
-
     );
 
 }
