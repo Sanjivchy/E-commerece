@@ -5,7 +5,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { commerce } from '../../../lib/commerce';
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
-import useStyles from './styles';
+import useStyles from './style';
 
 const steps = ['Shipping address', 'Payment details'];
 
@@ -92,4 +92,4 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   );
 };
 
-export default Checkout;
+export default Checkout
